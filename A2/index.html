@@ -4,10 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>3.3: Cuerpo del Documento</title>
+    <style>
+        /* Estilo para el contenedor del <nav> como tabla */
+        nav {
+            display: table; /* Tratamos el <nav> como una tabla */
+            width: 100%; /* Aseguramos que ocupe todo el ancho */
+            border-collapse: collapse; /* Hace que las celdas no tengan espacios entre ellas */
+        }
+
+        /* Estilo de las celdas (enlaces) dentro del <nav> */
+        nav a:link {
+            display: table-row; /* Hace que cada enlace se trate como una fila */
+            color: red; /* Enlace sin visitar: color rojo */
+            text-decoration: none; /* Sin subrayado */
+            padding: 8px 16px; /* Espaciado dentro del enlace */
+            font-weight: bold; /* Texto en negrita */
+            transition: all 0.3s; /* Transición suave */
+            border-bottom: 1px solid #ddd; /* Línea divisoria entre enlaces */
+        }
+
+        /* Efecto cuando el cursor está sobre el enlace */
+        nav a:hover {
+            color: white; /* Texto blanco */
+            background-color: red; /* Fondo rojo */
+            text-decoration: underline; /* Subrayado */
+        }
+
+        /* Estilo para los enlaces visitados */
+        nav a:visited {
+            color: darkgreen; /* Color verde oscuro */
+            text-decoration: none; /* Sin subrayado */
+        }
+
+        /* Estilo cuando el enlace está activo (clicado) */
+        nav a:active {
+            color: orange; /* Color naranja */
+            text-decoration: none; /* Sin subrayado */
+        }
+
+        /* Estilo cuando el enlace tiene el foco del teclado */
+        nav a:focus {
+            color: blue; /* Color azul */
+            text-decoration: underline; /* Subrayado */
+        }
+    </style>
 </head>
 <body>
-
-    <!-- Encabezado principal -->
     <header>
         <img src="https://imgs.search.brave.com/JRk0uCmL0-H5Qxmew-41yGBcg_H8zGv3mkCe0DV32f8/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/aHVic3BvdC5jb20v/aHViZnMvbWVkaWEv/aW1hZ2VuaHRtbGVq/ZW1wbG8ucG5n" alt="Logo del sitio" width="100"> <!-- Logo del sitio -->
         <h1>Cuerpo del Documento</h1>
@@ -15,10 +57,14 @@
 
     <!-- Sección de navegación -->
     <nav>
-        
         <a href="sobremi.html">Sobre mi</a>
-        <a href="listas.html">listas</a></li>
-        </ul>
+        <a href="listas.html">Listas</a>
+        <a href="tablas.html">Horario</a>
+        <a href="formulario.html">Formulario</a>
+        <a href="pilaresweb.html">Los 3 pilares</a>
+        <a href="lenguajemarcasweb.pdf">Lenguaje de marcas en la web</a>
+        <a href="comoseusa.html">Curso práctico avanzado</a>
+        <a href="comoseusa2.html">Curso práctico avanzado 2</a>
     </nav>
 
     <!-- Contenido principal del documento -->
